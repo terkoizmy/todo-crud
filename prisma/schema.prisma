@@ -4,7 +4,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgres://eoqjnypt:XyptW-haRT0a0gyTQLOdzxLg8K0BzNjY@arjuna.db.elephantsql.com/eoqjnypt?connect_timeout=1000&connection_limit=300&pool_timeout=100"
 }
 
 model Todo {
