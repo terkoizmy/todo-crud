@@ -29,9 +29,7 @@ app.use(returnError);
 
 
 app.listen(PORT, () => {
-  console.log("----------------------------------------------------------")
-  console.log("🚀🚀 Server started listening on port:", PORT, "🚀🚀");
-  console.log("----------------------------------------------------------")
+  console.log("🚀🚀 Server started listening on port:", PORT, "🚀🚀")
 });
 
 
