@@ -3,7 +3,7 @@ name: Auto Deploy to aws ec2
 on: push
 
 jobs:
-  auto-deploy&run:
+  continuous-integration:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
