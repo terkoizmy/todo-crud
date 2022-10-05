@@ -1,0 +1,22 @@
+name: Auto Deploy to aws ec2
+
+on:
+  push:
+    branches: [main]
+
+
+jobs:
+  continuous-integration:
+    runs-on: ubuntu-latest
+    steps:
+    - name: pull request
+    run: git pull
+
+    - name: install dependencies
+    run: npm i
+
+    - name: run app
+    run: npm run start
+
+
+
