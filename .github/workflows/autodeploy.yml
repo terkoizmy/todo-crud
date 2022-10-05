@@ -6,14 +6,13 @@ jobs:
   auto-deploy&run:
     runs-on: ubuntu-latest
     steps:
-    - name: pull request
-    run: git pull
-
-    - name: install dependencies
-    run: npm i
-    
-    - name: run app
-    run: npm run start
+      - uses: actions/checkout@v2
+      - name: pull request
+      run: git pull
+      - name: install dependencies
+      run: npm i
+      - name: run app
+      run: npm run start
 
 
 
