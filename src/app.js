@@ -13,12 +13,12 @@ app.use(express.json());
 app.use(morgan("dev")); 
 app.use(cors());
  
-//endpoint
-// app.get("/ping", (req, res) => {  
-//   return res.send({
-//     status: "Healthy",
-//   });
-// });
+// endpoint
+app.get("/ping", (req, res) => {  
+  return res.send({
+    status: "Healthy",
+  });
+});
 
 app.use(routes);
 
