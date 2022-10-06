@@ -10,16 +10,16 @@ jobs:
     name: Deploy to EC2
     runs-on: ubuntu-latest
 
-  steps:
-    - name: Checkout the files
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout the files
+        uses: actions/checkout@v2
 
-    - name: Deploy to Server 1
-    uses: easingthemes/ssh-deploy@main
-    env:
-      SSH_PRIVATE_KEY: ${ { terkoiz-rsa.pem }}
-      REMOTE_HOST: ${ { ec2-54-176-215-58.us-west-1.compute.amazonaws.com }}
-      REMOTE_USER: ${ { terkoiz-crud }}
-      TARGET: ${ { todo-crud }}
+      - name: Deploy to Server 1
+      uses: easingthemes/ssh-deploy@main
+      env:
+        SSH_PRIVATE_KEY: ${ { terkoiz-rsa.pem }}
+        REMOTE_HOST: ${ { ec2-54-176-215-58.us-west-1.compute.amazonaws.com }}
+        REMOTE_USER: ${ { terkoiz-crud }}
+        TARGET: ${ { todo-crud }}
 
 
