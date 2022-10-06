@@ -16,7 +16,7 @@ app.use(cors());
 // endpoint
 app.get("/ping", (req, res) => {  
   return res.send({
-    status: "Healthy",
+    status: "Healthy: 200",
   });
 });
 
